@@ -1,2 +1,2 @@
 # gh-actions-course
-Code for Github actions course
+Code for Github actions course.
