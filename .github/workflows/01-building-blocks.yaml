@@ -1,7 +1,8 @@
-name: 01 - Building Blocks
+name: 01 - Building Blocks # key, values 
 
 on: workflow_dispatch
 
+# Nested object (dictionary) structure
 jobs:
     echo-hello:
         runs-on: ubuntu-latest
@@ -11,6 +12,7 @@ jobs:
     echo-goodbye:
         runs-on: ubuntu-latest
         steps:
+        # Array of dictionaries
             - name: Successful step
               run: |
                 echo "I will pass"
