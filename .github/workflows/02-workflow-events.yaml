@@ -16,7 +16,7 @@ jobs:
       - name: Show the OS
         run: |
           echo "I've been triggered by a(n) ${{github.event_name}} event."
-          echo: "I am running on $RUNNER_OS"
+          echo "I am running on $RUNNER_OS"
 
   windows-echo:
     runs-on: windows-latest
