@@ -10,8 +10,19 @@ on:
   # workflow_dispatch
 
 jobs:
-  echo:
+  ubuntu-echo:
     runs-on: ubuntu-latest
     steps:
-      - name: Show the trigger
-        run: echo "I've been triggered by a(n) ${{github.event_name}} event."
+      - name: Show the OS
+        run: |
+          echo "I've been triggered by a(n) ${{github.event_name}} event."
+          echo: "I am running on $RUNNER_OS"
+
+  windows-echo:
+    runs-on: windows-latest
+    steps:
+      - name: Show the OS
+        shell: bash
+        run: |
+          echo "I am running on a Windows runner"
+          echo "I'm running on $RUNNER_OS"
