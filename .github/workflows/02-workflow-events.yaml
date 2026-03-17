@@ -18,19 +18,19 @@ jobs:
           echo "I've been triggered by a(n) ${{github.event_name}} event."
           echo "I am running on $RUNNER_OS"
 
-  windows-echo:
-    runs-on: windows-latest
-    steps:
-      - name: Show the OS
-        shell: bash
-        run: |
-          echo "I am running on a Windows runner"
-          echo "I'm running on $RUNNER_OS"
+  # windows-echo:
+  #   runs-on: windows-latest
+  #   steps:
+  #     - name: Show the OS
+  #       shell: bash
+  #       run: |
+  #         echo "I am running on a Windows runner"
+  #         echo "I'm running on $RUNNER_OS"
 
-  macos-echo:
-    runs-on: macos-latest
-    steps:
-      - name: Show the OS
-        run: |
-          echo "I'm running on a MacOS runner"
-          echo "I'm running on $RUNNER_OS"
+  # macos-echo:
+  #   runs-on: macos-latest
+  #   steps:
+  #     - name: Show the OS
+  #       run: |
+  #         echo "I'm running on a MacOS runner"
+  #         echo "I'm running on $RUNNER_OS"
